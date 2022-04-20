@@ -1,0 +1,78 @@
+.side-menu{
+    position: fixed;
+    background-color: #000;
+    width: 300px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    transition: width .2s ease-in;
+}
+
+/* css selector ar kaj aita */
+.side-menu.inactive{   
+    width: 80px;
+}
+
+.side-menu .top-section{
+    position: relative;
+}
+
+.side-menu .top-section .logo{
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.side-menu .top-section .logo img{
+    max-height: 100%;
+    max-width: 100%;
+
+}
+.side-menu .top-section .toggle-menu-btn{
+    color: #333;
+    font-size: 20px;
+    position:absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.side-menu.inactive .top-section .toggle-menu-btn{
+    right:-50px;
+}
+
+.side-menu .search-controller{
+    color: white;
+    position: relative;
+}
+.side-menu  .search-controller .search-btn{
+    position: absolute;
+    background: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #666;
+    height: 35px;
+    width: 40px;
+    /* background-color:brown; */
+}
+.side-menu .search-controller input[type=text]{
+    border: 0;
+    outline: none;
+    height: 35px;
+    background-color: #333;
+    border-radius: 5px;
+    display: block;
+    margin: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 40px;
+    color: #666;
+}
+
+.side-menu .divider{
+    width: 100%;
+    height: 1px;
+    border-radius: 1px;
+    background-color: #333;
+}
